@@ -24,7 +24,7 @@ to use the CLI,open your terminal and type:
 
 to use the gem as an API:
       #{"word  = Meaning::MeaningLab.new('ruby')".color(:green)}
-      #{"word.dictioanry".color(:green)}
+      #{"word.dictionary".color(:green)}
 
 Disclaimer: This gem has no direct or indirect relation to http://dictionary.cambridge.org/
 EOH
