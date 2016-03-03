@@ -11,7 +11,7 @@ module Meaning
     def of word
       meaning =   MeaningLab.new word
       error = meaning.dictionary[:error]
-       error.nil? ? colorize(meaning.dictionary) : puts("(#{word.capitalize.underline.red}): #{error.color(:red)}.")
+      error.nil? ? colorize(meaning.dictionary) : puts("(#{word.capitalize.underline.red}): #{error.color(:red)}.")
     end
 
     desc 'help',"Full Description of how both the CLi and the API work"
@@ -25,6 +25,8 @@ to use the CLI,open your terminal and type:
 to use the gem as an API:
       #{"word  = Meaning::MeaningLab.new('ruby')".color(:green)}
       #{"word.dictioanry".color(:green)}
+
+Disclaimer: This gem has no formal or informal relation to http://dictionary.cambridge.org/
 EOH
     end
 
