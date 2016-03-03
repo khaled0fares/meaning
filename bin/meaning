@@ -26,7 +26,7 @@ to use the gem as an API:
       #{"word  = Meaning::MeaningLab.new('ruby')".color(:green)}
       #{"word.dictioanry".color(:green)}
 
-Disclaimer: This gem has no formal or informal relation to http://dictionary.cambridge.org/
+Disclaimer: This gem has no direct or indirect relation to http://dictionary.cambridge.org/
 EOH
     end
 
