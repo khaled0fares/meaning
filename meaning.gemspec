@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Khaled0Fares"]
   spec.email         = ["kfares29@gmail.com"]
 
-  spec.summary       = %q{English Dictionary CLI and API}
-  spec.description   = %q{This is and English dictionary command line tool wihch can be used as in API in your web application.}
+  spec.summary       = %q{English Dictionary(CLI and API) based on dictionary.cambridge.org}
+  spec.description   = %q{This is an English dictionary orgmand line tool wihch can be used as an API in your Rails app based on dictionary.cambrige.org site.}
   spec.homepage      = "https://github.com/khaledmohammedfares/meaning"
   spec.license       = "MIT"
 
@@ -29,8 +29,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_runtime "thor", "~> 19.1"
-  spec.add_development_runtime "nokogiri", "~> 2.2.3"
-  spec.add_development_runtime "rainbow", "~> 2.1.0"
+  spec.add_runtime_dependency "thor", "~> 19.1"
+  spec.add_runtime_dependency "nokogiri"
+  spec.add_runtime_dependency "rainbow"
 
 end
