@@ -40,7 +40,7 @@ EOH
       puts "\n(#{word})  [#{sound}]"
       puts "\n\n Definitions:".color(:green)
       definitions.each {|dev| puts "- #{dev}\n".color(:green)}
-      puts "\n\n Examples:".color(:orange)
+      puts "\n\n Examples:".color(:orange) unless examples.empty?
       examples.each {|eg| puts "- #{eg}\n".color(:orange)}
     end
 
