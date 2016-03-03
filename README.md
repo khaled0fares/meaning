@@ -1,4 +1,4 @@
-# Meaning [![Gem Version](https://badge.fury.io/rb/meaning.svg)](https://badge.fury.io/rb/meaning)
+# Meaning [![Gem Version](https://badge.fury.io/rb/meaning.png)](https://badge.fury.io/rb/meaning)
 
 English Dictionary(CLI and API) based on dictionary.cambridge.org 
 
