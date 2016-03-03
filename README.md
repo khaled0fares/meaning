@@ -24,7 +24,7 @@ CLI:
 ```bash
 $ meaning of Disclaimer
 ```
-![CLI](/imgs/disclaimer.png)
+![CLI](/imgs/factutom.png)
 
 ## License
 
