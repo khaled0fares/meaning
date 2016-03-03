@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/meaning.rb'
+Dependencies =  ['open-uri','thor','nokogiri','rainbow/ext/string']
+Dependencies.each {|dependency| require dependency}
+
+module Meaning
+  class Base < Thor
+
+    desc 'of',"Getting description of a WORD in english"
+    def of word
+      meaning =   MeaningLab.new word
+      error = meaning.dictionary[:error]
+       error.nil? ? colorize(meaning.dictionary) : puts("(#{word.capitalize.underline.red}): #{error.color(:red)}.")
+    end
+
+    desc 'help',"Full Description of how both the CLi and the API work"
+    def help
+      puts <<EOH
+Meaning is a open source CLI and API dictionary Based on http://dictionary.cambridge.org/ site.
+
+to use the CLI,open your terminal and type:
+      #{"meaning of Ruby".color(:green)}
+
+to use the gem as an API:
+      #{"word  = Meaning::MeaningLab.new('ruby')".color(:green)}
+      #{"word.dictioanry".color(:green)}
+EOH
+    end
+
+    private
+    def colorize text
+      word =  text[:word].color(:yellow).underline
+      sound  = text[:sound].color(:yellow)
+      definitions =  text[:definitions]
+      examples =  text[:examples]
+
+      puts "\n(#{word})  [#{sound}]"
+      puts "\n\n Definitions:".color(:green)
+      definitions.each {|dev| puts "- #{dev}\n".color(:green)}
+      puts "\n\n Examples:".color(:orange)
+      examples.each {|eg| puts "- #{eg}\n".color(:orange)}
+    end
+
+  end
+end
+Meaning::Base.start ARGV
