@@ -22,7 +22,7 @@ word.dictionary
 ```
 CLI:
 ```bash
-$ meaning of Disclaimer
+$ meaning of Factotum
 ```
 ![CLI](/imgs/factotum.png)
 
