@@ -14,7 +14,7 @@ module Meaning
         sound
         fetch_for("definitions",".def")
         fetch_for("examples",".eg")
-      else
+        else
         @dictionary[:error] = "Not even a word!"
       end
     end
@@ -36,7 +36,7 @@ module Meaning
       @doc.css(css_class).each do |element|
         elements  << sanatize_from_colon(element.text)
       end
-      @dictionary[name.to_sym]  = elements
+      @dictionary[name.to_sym]  = elements unless elements.empty?
     end
     def sanatize_from_colon text
       text.gsub!(":",".")
