@@ -7,5 +7,5 @@
 /pkg/
 /spec/reports/
 /tmp/
-.gitignore
-LICENSE.txt
+/.gitignore
+/LICENSE.txt
