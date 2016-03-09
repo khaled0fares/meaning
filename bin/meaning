@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/meaning.rb'
-Dependencies =  ['open-uri','thor','nokogiri','rainbow/ext/string']
+Dependencies =  ['thor','rainbow/ext/string']
 Dependencies.each {|dependency| require dependency}
 
 module Meaning

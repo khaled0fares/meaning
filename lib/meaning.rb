@@ -1,4 +1,6 @@
 require_relative "meaning/version"
+Dependencies =  ['open-uri','nokogiri']
+Dependencies.each {|dependency| require dependency}
 module Meaning
   class MeaningLab
     attr_reader :dictionary
