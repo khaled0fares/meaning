@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/meaning.rb'
-Dependencies =  ['thor','rainbow/ext/string']
-Dependencies.each {|dependency| require dependency}
+Bin_Dependencies =  ['thor','rainbow/ext/string']
+Bin_Dependencies.each {|dependency| require dependency}
 
 module Meaning
   class Base < Thor
