@@ -17,7 +17,7 @@ module Meaning
     desc 'help',"Full Description of how both the CLi and the API work"
     def help
       puts <<EOH
-Meaning is a open source CLI and API dictionary Based on http://dictionary.cambridge.org/ site.
+Meaning is an open source CLI and API dictionary Based on http://dictionary.cambridge.org/ site.
 
 to use the CLI,open your terminal and type:
       #{"meaning of Ruby".color(:green)}
