@@ -3,7 +3,6 @@
 require_relative '../lib/meaning.rb'
 Bin_Dependencies =  ['thor','rainbow/ext/string']
 Bin_Dependencies.each {|dependency| require dependency}
-
 module Meaning
   class Base < Thor
 
@@ -19,10 +18,10 @@ module Meaning
       puts <<EOH
 Meaning is an open source CLI and API dictionary Based on http://dictionary.cambridge.org/ site.
 
-to use the CLI,open your terminal and type:
+To use the CLI,open your terminal and type:
       #{"meaning of Ruby".color(:green)}
 
-to use the gem as an API:
+To use the gem as an API:
       #{"word  = Meaning::MeaningLab.new('ruby')".color(:green)}
       #{"word.dictionary".color(:green)}
 
@@ -45,7 +44,7 @@ EOH
         examples.each {|eg| puts "- #{eg}\n".color(:orange)}
       end
     end
-
   end
 end
 Meaning::Base.start ARGV
+
